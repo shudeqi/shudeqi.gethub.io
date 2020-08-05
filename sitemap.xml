@@ -2,6 +2,48 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://shudeqi.github.io/year/08/05/%E7%BD%AE%E9%A1%B6%E8%AF%95%E9%AA%8C/</loc>
+    
+    <lastmod>2020-08-05</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://shudeqi.github.io/link/index.html</loc>
+    
+    <lastmod>2020-08-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://shudeqi.github.io/categories/index.html</loc>
+    
+    <lastmod>2020-08-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://shudeqi.github.io/tags/index.html</loc>
+    
+    <lastmod>2020-08-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://shudeqi.github.io/contact/index.html</loc>
+    
+    <lastmod>2020-08-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://shudeqi.github.io/about/index.html</loc>
+    
+    <lastmod>2020-08-04</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://shudeqi.github.io/year/08/01/Create%20Myblog/</loc>
     
     <lastmod>2020-08-03</lastmod>
@@ -9,14 +51,63 @@
   </url>
   
   <url>
-    <loc>http://shudeqi.github.io/tags/index.html</loc>
+    <loc>http://shudeqi.github.io/talk/index.html</loc>
     
     <lastmod>2020-08-02</lastmod>
     
   </url>
   
   <url>
-    <loc>http://shudeqi.github.io/link/index.html</loc>
+    <loc>http://shudeqi.github.io/movies/index.html</loc>
+    
+    <lastmod>2020-08-02</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://shudeqi.github.io/music/index.html</loc>
+    
+    <lastmod>2020-08-02</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://shudeqi.github.io/gallery/index.html</loc>
+    
+    <lastmod>2020-08-02</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://shudeqi.github.io/home/index.html</loc>
+    
+    <lastmod>2020-08-02</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://shudeqi.github.io/box/index.html</loc>
+    
+    <lastmod>2020-08-02</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://shudeqi.github.io/box/about/index.html</loc>
+    
+    <lastmod>2020-08-02</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://shudeqi.github.io/books/index.html</loc>
+    
+    <lastmod>2020-08-02</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://shudeqi.github.io/bangumis/index.html</loc>
     
     <lastmod>2020-08-02</lastmod>
     
@@ -32,7 +123,7 @@
 
   <url>
     <loc>http://shudeqi.github.io/</loc>
-    <lastmod>2020-08-04</lastmod>
+    <lastmod>2020-08-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -40,7 +131,14 @@
   
   <url>
     <loc>http://shudeqi.github.io/tags/Markdown%E7%BB%83%E4%B9%A0%E8%BF%90%E7%94%A8%E6%96%87%E7%AB%A0/</loc>
-    <lastmod>2020-08-04</lastmod>
+    <lastmod>2020-08-05</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://shudeqi.github.io/tags/new/</loc>
+    <lastmod>2020-08-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
