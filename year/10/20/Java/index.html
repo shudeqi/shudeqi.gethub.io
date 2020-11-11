@@ -1,0 +1,178 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>書德柒のBLOG | 書德柒のBLOG</title><meta name="description" content="面向对象： 对于类的创建和使用，无外乎就是操作类的变量，调用类的方法，通过对象.属性，对象.方法执行 对于public和private的理解：  public是公有的数据变量，可以再内部类和外部类中同时调用的，而private只能在内部类中调用  匿名类对象 方法的重载，同一个类中，允许存在一个以上的同名方法，只要参数个数或者参数类型不同或者参数类型的顺序不同即可，参数名字不同不构成重载。 Jav"><meta name="keywords" content="程序员"><meta name="author" content="德柒"><meta name="copyright" content="德柒"><meta name="format-detection" content="telephone=no"><link rel="shortcut icon" href="/img/bitbug_favicon.ico"><link rel="canonical" href="http://shudeqi.github.io/year/10/20/Java/"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//fonts.googleapis.com" crossorigin="crossorigin"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta property="og:type" content="article"><meta property="og:title" content="書德柒のBLOG"><meta property="og:url" content="http://shudeqi.github.io/year/10/20/Java/"><meta property="og:site_name" content="書德柒のBLOG"><meta property="og:description" content="面向对象： 对于类的创建和使用，无外乎就是操作类的变量，调用类的方法，通过对象.属性，对象.方法执行 对于public和private的理解：  public是公有的数据变量，可以再内部类和外部类中同时调用的，而private只能在内部类中调用  匿名类对象 方法的重载，同一个类中，允许存在一个以上的同名方法，只要参数个数或者参数类型不同或者参数类型的顺序不同即可，参数名字不同不构成重载。 Jav"><meta property="og:image" content="https://s1.ax1x.com/2020/08/06/aRijDx.png"><meta property="article:published_time" content="2020-10-19T16:00:00.000Z"><meta property="article:modified_time" content="2020-11-10T12:31:12.636Z"><meta name="twitter:card" content="summary"><link rel="manifest" href="/image/pwa/manifest.json"/><meta name="theme-color" content="#fff"/><meta name="msapplication-TileColor" content="#fff"/><link rel="apple-touch-icon" sizes="180x180" href="/image/pwa/apple-touch-icon.png"/><link rel="icon" type="image/png" sizes="32x32" href="/image/pwa/32.png"/><link rel="icon" type="image/png" sizes="16x16" href="/image/pwa/16.png"/><link rel="mask-icon" href="/image/pwa/safari-pinned-tab.svg" color="#5bbad5"/><script>var activateDarkMode = function () {
+  document.documentElement.setAttribute('data-theme', 'dark')
+  if (document.querySelector('meta[name="theme-color"]') !== null) {
+    document.querySelector('meta[name="theme-color"]').setAttribute('content', '#000')
+  }
+}
+var activateLightMode = function () {
+  document.documentElement.setAttribute('data-theme', 'light')
+  if (document.querySelector('meta[name="theme-color"]') !== null) {
+    document.querySelector('meta[name="theme-color"]').setAttribute('content', '#fff')
+  }
+}
+
+var getCookies = function (name) {
+  const value = `; ${document.cookie}`
+  const parts = value.split(`; ${name}=`)
+  if (parts.length === 2) return parts.pop().split(';').shift()
+}
+
+var autoChangeMode = 'false'
+var t = getCookies('theme')
+if (autoChangeMode === '1') {
+  var isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+  var isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+  var isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+  var hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+  if (t === undefined) {
+    if (isLightMode) activateLightMode()
+    else if (isDarkMode) activateDarkMode()
+    else if (isNotSpecified || hasNoSupport) {
+      console.log('You specified no preference for a color scheme or your browser does not support it. I Schedule dark mode during night time.')
+      var now = new Date()
+      var hour = now.getHours()
+      var isNight = hour <= 6 || hour >= 18
+      isNight ? activateDarkMode() : activateLightMode()
+    }
+    window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
+      if (Cookies.get('theme') === undefined) {
+        e.matches ? activateDarkMode() : activateLightMode()
+      }
+    })
+  } else if (t === 'light') activateLightMode()
+  else activateDarkMode()
+} else if (autoChangeMode === '2') {
+  now = new Date()
+  hour = now.getHours()
+  isNight = hour <= 6 || hour >= 18
+  if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+  else if (t === 'light') activateLightMode()
+  else activateDarkMode()
+} else {
+  if (t === 'dark') activateDarkMode()
+  else if (t === 'light') activateLightMode()
+}</script><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web&amp;display=swap"><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"简"},
+  noticeOutdate: undefined,
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  bookmark: {
+    message_prev: '按',
+    message_next: '键将本页加入书签'
+  },
+  runtime_unit: '天',
+  runtime: true,
+  copyright: {"limitCount":20,"languages":{"author":"作者: 德柒","link":"链接: ","source":"来源: 書德柒のBLOG","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  ClickShowText: {"text":"書,德,柒","fontSize":"15px"},
+  medium_zoom: false,
+  fancybox: true,
+  Snackbar: {"bookmark":{"message_prev":"按","message_next":"键将本页加入书签"},"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#121212","position":"bottom-left"},
+  justifiedGallery: {
+    js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+    css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+  },
+  baiduPush: false,
+  highlightCopy: true,
+  highlightLang: true,
+  isPhotoFigcaption: true,
+  islazyload: true,
+  isanchor: false    
+}</script><script id="config_change">var GLOBAL_CONFIG_SITE = { 
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isSidebar: false,
+  postUpdate: '2020-11-10 20:31:12'
+}</script><noscript><style>
+#nav {
+  opacity: 1
+}
+.justified-gallery img {
+  opacity: 1
+}
+</style></noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/Hexo/css/flink.min.css"><meta name="generator" content="Hexo 5.0.0"><link rel="alternate" href="/atom.xml" title="書德柒のBLOG" type="application/atom+xml">
+</head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><div id="mobile-sidebar"><div id="menu_mask"></div><div id="mobile-sidebar-menus"><div class="mobile_author_icon"><img class="avatar-img" data-lazy-src="/img/avatar.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="mobile_post_data"><div class="mobile_data_item is-center"><div class="mobile_data_link"><a href="/archives/"><div class="headline">文章</div><div class="length_num">11</div></a></div></div><div class="mobile_data_item is-center">      <div class="mobile_data_link"><a href="/tags/"><div class="headline">标签</div><div class="length_num">8</div></a></div></div><div class="mobile_data_item is-center">     <div class="mobile_data_link"><a href="/categories/"><div class="headline">分类</div><div class="length_num">3</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 档案室</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 列表</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li><li><a class="site-page" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 照片</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 链接</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url(https://s1.ax1x.com/2020/08/06/aRijDx.png)"><nav id="nav"><span class="pull-left" id="blog_name"><a class="blog_title" id="site-name" href="/">書德柒のBLOG</a></span><span class="pull-right menus"><div id="search_button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 档案室</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 列表</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li><li><a class="site-page" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 照片</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 链接</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><span class="toggle-menu close"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></span></span></nav><div id="post-info"><div id="post-title"><div class="posttitle">无题</div></div><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2020-10-19T16:00:00.000Z" title="发表于 2020-10-20 00:00:00">2020-10-20</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2020-11-10T12:31:12.636Z" title="更新于 2020-11-10 20:31:12">2020-11-10</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E5%AD%A6%E4%B9%A0%E7%9F%A5%E8%AF%86/">学习知识</a></span></div><div class="meta-secondline"> <span class="post-meta-separator">|</span><span class="post-meta-pv-cv"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout_post" id="content-inner"><article id="post"><div class="post-content" id="article-container"><p>面向对象：</p>
+<p>对于类的创建和使用，无外乎就是操作类的变量，调用类的方法，通过对象.属性，对象.方法执行</p>
+<p>对于public和private的理解：</p>
+<blockquote>
+<p>public是公有的数据变量，可以再内部类和外部类中同时调用的，而private只能在内部类中调用</p>
+</blockquote>
+<p>匿名类对象</p>
+<p>方法的重载，同一个类中，允许存在一个以上的同名方法，只要参数个数或者参数类型不同或者参数类型的顺序不同即可，参数名字不同不构成重载。</p>
+<p>Java中特有的…的方式来说传递可变个数的参数，这种参数在使用时与数组的使用方式相同，但数组没有参数的话，就需要定义一个空数组或者是null</p>
+<p>这种…代表可以传递0到多个参数</p>
+<p>对于NullPointerException空指针的理解：1.类没有初始化，例如定义了个String，List，Map 等对象没有初始化就直接使用，肯定会出空指针错误，正确初始化如下： String str=&quot;&quot;; List list = new ArrayList(); Map map = new HashMap(); 2.在使用框架，例如Spring的时候成员对象是通过注入进来的，需要注意一下两点： 1）成员变量必须有get set 方法 2）必须在配置文件中把实例化好的对象注入进来 3.对上面的描述的一个补充，判断字符串是否为空在java中比较好的写法是 if(rb!=null&amp;&amp;!&quot;&quot;.equals(rb.trim())) ………….; 这种判断风格还是比较不错的（摘自CSDN中的一名学者）</p>
+<p>基本数据类在参数的传递过程中，就是把实参的值复制到形参上，引用数据在参数传递的过程中，都是指向在堆内存中的同一个对象，是可以改变堆内存中的值。</p>
+<p>封装的隐藏，主要是对属性做封装和隐藏，不能让调用者随意使用，先将数据声明为私有，在提供公共的方法来实现对该属性的操作，一般写getXxx(),setXxx(),方法。</p>
+<p>访问权限修饰符：private，缺省，protected , public,对于class的修饰，只能用缺省或者public，在同一个Java文件中可以写多个的class，但是只有一个public，其他的class只能是缺省，而缺省的只能在同一个包下访问。总结：如果子类和父类在同一个包下，那么对于父类的成员修饰符只要不是private，那子类就可以使用；如果子类和父类不在同一个包下，子类只能使用父类中protected和public修饰的成员</p>
+<p>类的构造方法，构造器有两类：隐式无参构造和显式有参（无惨）构造，new对象实际上就是调用类的构造方法。构造器的重载,重载的多个构造方法实际上就是相当于提供了多个初始化new对象的模板</p>
+<p>对于this的使用，使用当前类的成员变量或成员方法可以再其前面添加this，增强程序的阅读性，this.成员变量。当形参与成员变量重名时，如果在方法内部需要使用成员变量，必须添加this来表明该变量时类成员。使用this()必须放在构造器的首行；使用this调用本类中其他的构造器，保证至少有一个构造器是不用this的，否则会出现递归构造器自己调用自己的情况，就会报错。</p>
+<p>继承：将共性的代码抽出来，写成父类，简化代码。子类的共性代码都是继承父类的，每个子类只要写自己的特有的代码，通过extends来继承，写法：class Subclass extends Superclass{}，不要为了获取其他类中某个功能而去继承，还是要符合生活实际，让代码更有意义。注：子类不是父类的子集，而是对父类的扩展。单继承性是指子类只能有一个父类，多层继承指子类还可以作为父类来继承。</p>
+<p>方法的重写：子类重写父类的方法，只是重写编写方法体的代码；子类重写的时候就不能比父类更严格的访问权限</p>
+<p>super：来调用父类中的指定操作，尤其是当子父类出现同名成员时，可以使用super进行区分，可以调用自己之上的所有父类。父类只有有参构造可以使用的时候，子类必须构建一个构造来调用父类的有参构造，并且调用父类构造方法要写在第一行，就像是父类有的，子类才能够调用，默认有无参构造，如果只写了一个有参构造的话，子类就必须调用，如果既有无参构造，又有有参构造，那么既可以调无参，又可以调有参。</p>
+<p>this和super的区别：</p>
+<ol>
+<li>访问属性：this是访问本类以及父类中的属性，而super只访问父类中的属性</li>
+<li>调用方法：this调用本类中的方法；super直接访问父级中的方法（多层继承）</li>
+<li>调用构造器：this调用本类构造器，必须放在构造器的首行；superthis调用父类构造器，必须放在子类构造器的首行，两个关键字只能有一个占据首行。</li>
+<li>特殊：表示的是当前对象</li>
+</ol>
+<p>多态性：Java的一个重要特性</p>
+<ol>
+<li><p>方法的重载和构造器的重写</p>
+</li>
+<li><p>对象的多态，子类的对象可以替代父类的对象使用，子类可以看做是特殊的父类，所以父类类型的引用可以指向子类的对象：向上转型，Person e = new Student();</p>
+</li>
+<li><p>一个引用类型变量如果声明为父类的类型，但实际引用的是子类对象，那么该变量就不能在访问子类中添加的属性，意思就是，如果你声明了Person为你的引用类型，那么就只能访问父类中的属性，哪怕你引用的对象属于子类，Person e = new Student();就像这样，只能使用Person的属性。</p>
+</li>
+<li><p>虚拟方法调用，编译时e时Person类型，而方法运行时才确定的，所以调用的是Student类中的方法—动态绑定</p>
+</li>
+<li><p>子类继承父类</p>
+<ul>
+<li><p>若子类重写了父类的方法，子类里面定义的方法彻底覆盖了父类里的同名方法，那么系统就不会将父类的方法转移到子类中</p>
+</li>
+<li><p>对于实例变量则不存在这样的现象，即使子类里定义了与父类完全一样的实例变量，这个实例变量依然不可能覆盖父类的实例变量</p>
+</li>
+</ul>
+</li>
+<li><p>instanceof操作符：检验某个对象是否类A的子类。</p>
+</li>
+<li><p>Object类：是所有Java的父类，就是多层继承的最高类。Object 设置的形参可以接受任何类作为其参数，作为实例。</p>
+</li>
+<li><p>对象的类型转换：</p>
+<ul>
+<li><p>自动类型转换：小数据转换成大数据</p>
+</li>
+<li><p>强制类型转换：大数据强制转换成小数据，在大数据类型前面加括号写转换的类型</p>
+</li>
+<li><p>子类到父类的类型可以自动转换</p>
+</li>
+<li><p>从父类到子类的类型必须通过强制类型转换实现</p>
+</li>
+<li><p>无继承关系的引用类型间的转换是非法的</p>
+</li>
+</ul>
+</li>
+<li><p>操作符与equals方法：</p>
+<ul>
+<li><p>对于 == 使用比较时，符号两边的数据类型必须兼容（要么相同数据类型，要么可以自动转换的数据类型），否则编译出错</p>
+</li>
+<li><p>equals():其作用与 == 符号相同；有个特殊情况：对于File , String , Date以及包装类（Wrapper  Class）来说，是比较其内容和类型。不考虑是否引用的同一个对象，原因很简单，在jdk中这些类重写了Object类中的equals()方法。</p>
+</li>
+</ul>
+</li>
+<li></li>
+</ol>
+</div><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined">德柒</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="http://shudeqi.github.io/year/10/20/Java/">http://shudeqi.github.io/year/10/20/Java/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://shudeqi.github.io" target="_blank">書德柒のBLOG</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E7%A8%8B%E5%BA%8F%E5%91%98/">程序员</a></div><div class="post_share"><div class="social-share" data-image="https://s1.ax1x.com/2020/08/06/aRijDx.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i> 打赏<div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="/img/wechat.jpg" target="_blank"><img class="post-qr-code-img" data-lazy-src="/img/wechat.jpg" alt="wechat"/></a><div class="post-qr-code-desc">wechat</div></li><li class="reward-item"><a href="/img/alipay.jpg" target="_blank"><img class="post-qr-code-img" data-lazy-src="/img/alipay.jpg" alt="alipay"/></a><div class="post-qr-code-desc">alipay</div></li></ul></div></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/year/11/03/JavaEE%E7%AE%80%E4%BB%8B/"><img class="prev-cover" data-lazy-src="https://s1.ax1x.com/2020/08/05/asZxgI.jpg" onerror="onerror=null;src='/img/404.jpg'"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info"></div></div></a></div><div class="next-post pull-right"><a href="/year/09/01/%E7%A1%85%E8%B0%B7%E5%8D%81%E6%AD%A5%E5%AD%A6%E4%B9%A0%E6%B3%95/"><img class="next-cover" data-lazy-src="https://s1.ax1x.com/2020/08/06/aRijDx.png" onerror="onerror=null;src='/img/404.jpg'"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">硅谷十步学习法</div></div></a></div></nav><div class="relatedPosts"><div class="relatedPosts_headline"><i class="fas fa-thumbs-up fa-fw"></i><span> 相关推荐</span></div><div class="relatedPosts_list"><div class="relatedPosts_item"><a href="/year/09/01/硅谷十步学习法/" title="硅谷十步学习法"><img class="relatedPosts_cover" data-lazy-src="https://s1.ax1x.com/2020/08/06/aRijDx.png"><div class="relatedPosts_main is-center"><div class="relatedPosts_date"><i class="far fa-calendar-alt fa-fw"></i> 2020-09-01</div><div class="relatedPosts_title">硅谷十步学习法</div></div></a></div></div></div></article></main><footer id="footer" style="background-image: url(https://s1.ax1x.com/2020/08/06/aRijDx.png)" data-type="photo"><div id="footer-wrap"><div class="copyright">&copy;2020 By 德柒</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">有朋自遠方來，不亦樂乎！</div></div></footer></div><section id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="font_plus" type="button" title="放大字体"><i class="fas fa-plus"></i></button><button id="font_minus" type="button" title="缩小字体"><i class="fas fa-minus"></i></button><button id="translateLink" type="button" title="简繁转换">简</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></section><div class="search-dialog" id="local-search"><div class="search-dialog__title" id="local-search-title">本地搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div></div><hr/><div id="local-search-results"><div id="local-hits"></div><div id="local-stats"><div class="local-search-stats__hr" id="hr"><span>由</span> <a target="_blank" rel="noopener" href="https://github.com/wzpan/hexo-generator-search" style="color:#49B1F5;">hexo-generator-search</a>
+ <span>提供支持</span></div></div></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div id="search-mask"></div><div><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module" defer></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js" async></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script src="/js/search/local-search.js"></script><script>var endLoading = function () {
+  document.body.style.overflow = 'auto';
+  document.getElementById('loading-box').classList.add("loaded")
+}
+window.addEventListener('load',endLoading)</script><div class="js-pjax"><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><script src="https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/Hexo/js/hideMobileSidebar.js"></script><script defer="defer" id="ribbon" src="/js/third-party/canvas-ribbon.js" size="200" alpha="0.6" zIndex="-1" mobile="false" data-click="true"></script><script defer="defer" id="ribbon_piao" mobile="false" src="/js/third-party/piao.js"></script><script src="/js/third-party/click_heart.js" async="async"></script><script src="/js/third-party/ClickShowText.js" async="async"></script></div><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body></html>
