@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>書德柒のBLOG | 書德柒のBLOG</title><meta name="description" content="面向对象： 对于类的创建和使用，无外乎就是操作类的变量，调用类的方法，通过对象.属性，对象.方法执行 对于public和private的理解：  public是公有的数据变量，可以再内部类和外部类中同时调用的，而private只能在内部类中调用  匿名类对象 方法的重载，同一个类中，允许存在一个以上的同名方法，只要参数个数或者参数类型不同或者参数类型的顺序不同即可，参数名字不同不构成重载。 Jav"><meta name="keywords" content="程序员"><meta name="author" content="德柒"><meta name="copyright" content="德柒"><meta name="format-detection" content="telephone=no"><link rel="shortcut icon" href="/img/bitbug_favicon.ico"><link rel="canonical" href="http://shudeqi.github.io/year/10/20/Java/"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//fonts.googleapis.com" crossorigin="crossorigin"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta property="og:type" content="article"><meta property="og:title" content="書德柒のBLOG"><meta property="og:url" content="http://shudeqi.github.io/year/10/20/Java/"><meta property="og:site_name" content="書德柒のBLOG"><meta property="og:description" content="面向对象： 对于类的创建和使用，无外乎就是操作类的变量，调用类的方法，通过对象.属性，对象.方法执行 对于public和private的理解：  public是公有的数据变量，可以再内部类和外部类中同时调用的，而private只能在内部类中调用  匿名类对象 方法的重载，同一个类中，允许存在一个以上的同名方法，只要参数个数或者参数类型不同或者参数类型的顺序不同即可，参数名字不同不构成重载。 Jav"><meta property="og:image" content="https://s1.ax1x.com/2020/08/06/aRijDx.png"><meta property="article:published_time" content="2020-10-19T16:00:00.000Z"><meta property="article:modified_time" content="2020-11-10T12:31:12.636Z"><meta name="twitter:card" content="summary"><link rel="manifest" href="/image/pwa/manifest.json"/><meta name="theme-color" content="#fff"/><meta name="msapplication-TileColor" content="#fff"/><link rel="apple-touch-icon" sizes="180x180" href="/image/pwa/apple-touch-icon.png"/><link rel="icon" type="image/png" sizes="32x32" href="/image/pwa/32.png"/><link rel="icon" type="image/png" sizes="16x16" href="/image/pwa/16.png"/><link rel="mask-icon" href="/image/pwa/safari-pinned-tab.svg" color="#5bbad5"/><script>var activateDarkMode = function () {
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>書德柒のBLOG | 書德柒のBLOG</title><meta name="description" content="程序&#x3D;数据结构＋算法(集合框架); 程序猿程序&#x3D;面向对象＋框架;码农 查看源码的方法： 鼠标中键 按住Ctrl再点需要查看的类 双击shift，弹出搜索框来搜索类  代码快捷生成：查看类中所有方法：Alt+7  查看当前类的继承关系：F4    Ctrl+o 查找接口实现类：ctrl + alt + B 搜索类：Ctrl+Shift+T 一键格式化代碼：Ctrl+Alt+L try&#x2F;catch的快"><meta name="keywords" content="程序员"><meta name="author" content="德柒"><meta name="copyright" content="德柒"><meta name="format-detection" content="telephone=no"><link rel="shortcut icon" href="/img/bitbug_favicon.ico"><link rel="canonical" href="http://shudeqi.github.io/year/10/20/Java/"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//fonts.googleapis.com" crossorigin="crossorigin"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta property="og:type" content="article"><meta property="og:title" content="書德柒のBLOG"><meta property="og:url" content="http://shudeqi.github.io/year/10/20/Java/"><meta property="og:site_name" content="書德柒のBLOG"><meta property="og:description" content="程序&#x3D;数据结构＋算法(集合框架); 程序猿程序&#x3D;面向对象＋框架;码农 查看源码的方法： 鼠标中键 按住Ctrl再点需要查看的类 双击shift，弹出搜索框来搜索类  代码快捷生成：查看类中所有方法：Alt+7  查看当前类的继承关系：F4    Ctrl+o 查找接口实现类：ctrl + alt + B 搜索类：Ctrl+Shift+T 一键格式化代碼：Ctrl+Alt+L try&#x2F;catch的快"><meta property="og:image" content="https://s1.ax1x.com/2020/08/06/aRijDx.png"><meta property="article:published_time" content="2020-10-19T16:00:00.000Z"><meta property="article:modified_time" content="2020-12-02T01:39:23.602Z"><meta name="twitter:card" content="summary"><link rel="manifest" href="/image/pwa/manifest.json"/><meta name="theme-color" content="#fff"/><meta name="msapplication-TileColor" content="#fff"/><link rel="apple-touch-icon" sizes="180x180" href="/image/pwa/apple-touch-icon.png"/><link rel="icon" type="image/png" sizes="32x32" href="/image/pwa/32.png"/><link rel="icon" type="image/png" sizes="16x16" href="/image/pwa/16.png"/><link rel="mask-icon" href="/image/pwa/safari-pinned-tab.svg" color="#5bbad5"/><script>var activateDarkMode = function () {
   document.documentElement.setAttribute('data-theme', 'dark')
   if (document.querySelector('meta[name="theme-color"]') !== null) {
     document.querySelector('meta[name="theme-color"]').setAttribute('content', '#000')
@@ -88,8 +88,8 @@ if (autoChangeMode === '1') {
   isPost: true,
   isHome: false,
   isHighlightShrink: false,
-  isSidebar: false,
-  postUpdate: '2020-11-10 20:31:12'
+  isSidebar: true,
+  postUpdate: '2020-12-02 09:39:23'
 }</script><noscript><style>
 #nav {
   opacity: 1
@@ -98,7 +98,145 @@ if (autoChangeMode === '1') {
   opacity: 1
 }
 </style></noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/Hexo/css/flink.min.css"><meta name="generator" content="Hexo 5.0.0"><link rel="alternate" href="/atom.xml" title="書德柒のBLOG" type="application/atom+xml">
-</head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><div id="mobile-sidebar"><div id="menu_mask"></div><div id="mobile-sidebar-menus"><div class="mobile_author_icon"><img class="avatar-img" data-lazy-src="/img/avatar.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="mobile_post_data"><div class="mobile_data_item is-center"><div class="mobile_data_link"><a href="/archives/"><div class="headline">文章</div><div class="length_num">11</div></a></div></div><div class="mobile_data_item is-center">      <div class="mobile_data_link"><a href="/tags/"><div class="headline">标签</div><div class="length_num">8</div></a></div></div><div class="mobile_data_item is-center">     <div class="mobile_data_link"><a href="/categories/"><div class="headline">分类</div><div class="length_num">3</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 档案室</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 列表</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li><li><a class="site-page" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 照片</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 链接</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url(https://s1.ax1x.com/2020/08/06/aRijDx.png)"><nav id="nav"><span class="pull-left" id="blog_name"><a class="blog_title" id="site-name" href="/">書德柒のBLOG</a></span><span class="pull-right menus"><div id="search_button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 档案室</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 列表</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li><li><a class="site-page" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 照片</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 链接</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><span class="toggle-menu close"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></span></span></nav><div id="post-info"><div id="post-title"><div class="posttitle">无题</div></div><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2020-10-19T16:00:00.000Z" title="发表于 2020-10-20 00:00:00">2020-10-20</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2020-11-10T12:31:12.636Z" title="更新于 2020-11-10 20:31:12">2020-11-10</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E5%AD%A6%E4%B9%A0%E7%9F%A5%E8%AF%86/">学习知识</a></span></div><div class="meta-secondline"> <span class="post-meta-separator">|</span><span class="post-meta-pv-cv"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout_post" id="content-inner"><article id="post"><div class="post-content" id="article-container"><p>面向对象：</p>
+</head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><div id="mobile-sidebar"><div id="menu_mask"></div><div id="mobile-sidebar-menus"><div class="mobile_author_icon"><img class="avatar-img" data-lazy-src="/img/avatar.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="mobile_post_data"><div class="mobile_data_item is-center"><div class="mobile_data_link"><a href="/archives/"><div class="headline">文章</div><div class="length_num">15</div></a></div></div><div class="mobile_data_item is-center">      <div class="mobile_data_link"><a href="/tags/"><div class="headline">标签</div><div class="length_num">8</div></a></div></div><div class="mobile_data_item is-center">     <div class="mobile_data_link"><a href="/categories/"><div class="headline">分类</div><div class="length_num">3</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 档案室</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 列表</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li><li><a class="site-page" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 照片</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 链接</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div id="body-wrap"><div id="sidebar"><i class="fas fa-arrow-right on" id="toggle-sidebar"></i><div class="sidebar-toc"><div class="sidebar-toc__title">目录</div><div class="sidebar-toc__progress"><span class="progress-notice">你已经读了</span><span class="progress-num">0</span><span class="progress-percentage">%</span><div class="sidebar-toc__progress-bar">     </div></div><div class="sidebar-toc__content"><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9F%A5%E7%9C%8B%E6%BA%90%E7%A0%81%E7%9A%84%E6%96%B9%E6%B3%95%EF%BC%9A"><span class="toc-number">1.</span> <span class="toc-text">查看源码的方法：</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%A3%E7%A0%81%E5%BF%AB%E6%8D%B7%E7%94%9F%E6%88%90%EF%BC%9A"><span class="toc-number"></span> <span class="toc-text">代码快捷生成：</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#String-%E7%B1%BB%E5%9E%8B"><span class="toc-number"></span> <span class="toc-text">String 类型</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E2%80%9Ctest%E2%80%9D-sout-%E8%BE%93%E5%87%BA"><span class="toc-number"></span> <span class="toc-text">“test”.sout &#x2F;&#x2F;输出</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E2%80%9Ctest%E2%80%9D-cast-%E8%BD%AC%E6%8D%A2"><span class="toc-number"></span> <span class="toc-text">“test”.cast &#x2F;&#x2F;转换</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E2%80%9Ctest%E2%80%9D-format-%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%A0%BC%E5%BC%8F%E5%8C%96"><span class="toc-number"></span> <span class="toc-text">“test”.format &#x2F;&#x2F;字符串格式化</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E2%80%9Ctest%E2%80%9D-inst-%E6%88%96%E8%80%85-%E2%80%9Ctest%E2%80%9D-instanceof"><span class="toc-number"></span> <span class="toc-text">“test”.inst 或者 “test”.instanceof</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E2%80%9Ctest%E2%80%9D-nn-%E6%88%96%E8%80%85-%E2%80%9Ctest%E2%80%9D-notnull"><span class="toc-number"></span> <span class="toc-text">“test”.nn 或者 “test”.notnull</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E2%80%9Ctest%E2%80%9D-null"><span class="toc-number"></span> <span class="toc-text">“test”.null</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E2%80%9Ctest%E2%80%9D-par"><span class="toc-number"></span> <span class="toc-text">“test”.par</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E2%80%9Ctest%E2%80%9D-return"><span class="toc-number"></span> <span class="toc-text">“test”.return</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E2%80%9Ctest%E2%80%9D-synchronized"><span class="toc-number"></span> <span class="toc-text">“test”.synchronized</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E2%80%9Ctest%E2%80%9D-try"><span class="toc-number"></span> <span class="toc-text">“test”.try</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E2%80%9Ctest%E2%80%9D-var"><span class="toc-number"></span> <span class="toc-text">“test”.var</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#boolean%E7%B1%BB%E5%9E%8B"><span class="toc-number"></span> <span class="toc-text">boolean类型</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%95%B0%E5%80%BC%E7%B1%BB%E5%9E%8B"><span class="toc-number"></span> <span class="toc-text">数值类型</span></a></div></div></div><header class="post-bg" id="page-header" style="background-image: url(https://s1.ax1x.com/2020/08/06/aRijDx.png)"><nav id="nav"><span class="pull-left" id="blog_name"><a class="blog_title" id="site-name" href="/">書德柒のBLOG</a></span><span class="pull-right menus"><div id="search_button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 档案室</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 列表</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li><li><a class="site-page" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 照片</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 链接</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><span class="toggle-menu close"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></span></span></nav><div id="post-info"><div id="post-title"><div class="posttitle">无题</div></div><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2020-10-19T16:00:00.000Z" title="发表于 2020-10-20 00:00:00">2020-10-20</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2020-12-02T01:39:23.602Z" title="更新于 2020-12-02 09:39:23">2020-12-02</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E5%AD%A6%E4%B9%A0%E7%9F%A5%E8%AF%86/">学习知识</a></span></div><div class="meta-secondline"> <span class="post-meta-separator">|</span><span class="post-meta-pv-cv"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout_post" id="content-inner"><article id="post"><div class="post-content" id="article-container"><p>程序=数据结构＋算法(集合框架);</p>
+<p>程序猿程序=面向对象＋框架;码农</p>
+<h3 id="查看源码的方法："><a href="#查看源码的方法：" class="headerlink" title="查看源码的方法："></a>查看源码的方法：</h3><ol>
+<li>鼠标中键</li>
+<li>按住Ctrl再点需要查看的类</li>
+<li>双击shift，弹出搜索框来搜索类</li>
+</ol>
+<h2 id="代码快捷生成："><a href="#代码快捷生成：" class="headerlink" title="代码快捷生成："></a>代码快捷生成：</h2><p><code>查看类中所有方法：Alt+7</code> </p>
+<p><code>查看当前类的继承关系：F4    Ctrl+o</code></p>
+<p><code>查找接口实现类：ctrl + alt + B</code></p>
+<p><code>搜索类：Ctrl+Shift+T</code></p>
+<p><code>一键格式化代碼：Ctrl+Alt+L</code></p>
+<p><code>try/catch的快捷键：ctrl+alt+t</code> </p>
+<p><code>psf 生成公共静态final：public static final</code> </p>
+<p>   <code>psfi 生成公共静态 final int：public static final int</code> </p>
+<p>   <code>psfs 生成公共静态final String：public static final String</code> </p>
+<p>   <code>itar 生成array for代码块：</code></p>
+   <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">   for (int i &#x3D; 0; i &lt; array.length; i++) &#123;</span><br><span class="line">       String tmp &#x3D; array[i];</span><br><span class="line">   &#125;</span><br><span class="line">123</span><br></pre></td></tr></table></figure>
+
+<p>   <code>itco 生成Collection迭代：</code></p>
+   <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">  for (Iterator&lt;String&gt; iterator &#x3D; locationUrl.iterator(); iterator.hasNext(); ) &#123;</span><br><span class="line">String next &#x3D;  iterator.next();      </span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+
+<p>   <code>iten 生成enumeration遍历：</code></p>
+   <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">  while (enumeration.hasMoreElements()) &#123;</span><br><span class="line">Object nextElement &#x3D;  enumeration.nextElement();</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+
+<p>   <code>iter 生成增强forxun：</code></p>
+   <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">for (String s : locationUrl) &#123;</span><br><span class="line">            &#125;</span><br></pre></td></tr></table></figure>
+
+<p>   <code>itit 生成iterator 迭代：</code></p>
+   <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">while (iterator.hasNext()) &#123;</span><br><span class="line">       Object next &#x3D;  iterator.next();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>   <code>itli 生成List的遍历：</code></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">  for (int i &#x3D; 0; i &lt; locationUrl.size(); i++) &#123;</span><br><span class="line">String s &#x3D;  locationUrl.get(i);</span><br><span class="line">  &#125; </span><br></pre></td></tr></table></figure>
+
+<p>   <code>ittok 生成String token遍历：</code></p>
+   <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">for (StringTokenizer stringTokenizer &#x3D; new StringTokenizer(TVSOU_URL); stringTokenizer.hasMoreTokens(); ) &#123;</span><br><span class="line">       String s &#x3D; stringTokenizer.nextToken();    </span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure>
+
+<p>   <code>10.fori 生成递增循环：</code></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">for (int i &#x3D; 0; i &lt; 10; i++) &#123;&#125;</span><br></pre></td></tr></table></figure>
+
+<p>   <code>10.forr 生成递减循环:</code></p>
+   <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">for (int i &#x3D; 10; i &gt; 0; i--) &#123;</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
+
+<p><code>itve 生成Vector数组迭代：</code></p>
+   <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">for (int i &#x3D; 0; i &lt; vector.size(); i++) &#123;</span><br><span class="line">    Object elementAt &#x3D;  vector.elementAt(i);</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
+
+<pre><code>`itaws 生成Axis2 web service调用：`</code></pre>
+   <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">  try &#123;</span><br><span class="line">      MyServiceStub stub &#x3D; new MyServiceStub();</span><br><span class="line">      stub.sayHelloWorldFrom();</span><br><span class="line">   &#125; catch (Exception ex) &#123;</span><br><span class="line">      ex.printStackTrace();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<pre><code>`itws 生成 Axis web service调用：`</code></pre>
+   <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">  try &#123;</span><br><span class="line">       MyServiceLocator locator &#x3D; new MyServiceLocator();</span><br><span class="line">       Activator service &#x3D; locator.get();</span><br><span class="line">    &#x2F;&#x2F; If authorization is required</span><br><span class="line">       &#x2F;&#x2F;((MyService_Soap_BindingStub)service).setUsername(&quot;user3&quot;);</span><br><span class="line">    &#x2F;&#x2F;((MyService_Soap_BindingStub)service).setPassword(&quot;pass3&quot;);</span><br><span class="line">       &#x2F;&#x2F; invoke business method</span><br><span class="line">       service.businessMethod();</span><br><span class="line">   &#125; catch (javax.xml.rpc.ServiceException ex) &#123;</span><br><span class="line">       ex.printStackTrace();</span><br><span class="line">   &#125; catch (java.rmi.RemoteException ex) &#123;</span><br><span class="line">       ex.printStackTrace();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ol>
+<li><p>psvm : 生成main方法:<br>public static void main(String[] args) {}</p>
+</li>
+<li><p>serr : 生成打印输出Errror:<br>System.err.println();</p>
+</li>
+<li><p>sout : 生成打印输出:<br>System.out.println(“”);</p>
+</li>
+<li><p>souf : 生成打印输出:<br>System.out.printf(“”);</p>
+</li>
+<li><p>soutm : 生成打印输出当前类的当前方法名<br>System.out.println(“CurrentClass.currentMetohd”);</p>
+</li>
+<li><p>soutp : 生成打印输出当前方法参数及参数值<br>System.out.println(“args = “ + args);</p>
+</li>
+<li><p>“abc”.sout : 生成打印字符串 “abc”:<br>System.out.println(“abc”);</p>
+</li>
+<li><p>psf : 生成 共有 静态最终的<br>public static final</p>
+</li>
+<li><p>psfi : 生成 共有 静态最终的 int<br>public static final int</p>
+</li>
+<li><p>psfs : 生成 共有 静态最终的 String<br>public static final String</p>
+</li>
+<li><p>CTRL+ALT+T / Command +option + T : 把选中的代码放在 if/while/for/try里</p>
+</li>
+<li><p>ifn : 生成判断是否为空<br>if (x == null) {}</p>
+</li>
+<li><p>inn : 生成判断是否不为空<br>if (x != null) {<br>}</p>
+</li>
+<li><p>inst : 生成是否是该对象引用<br>if (x instanceof Object) {<br> Object o = (Object) x;<br>}</p>
+</li>
+<li><p>fori : 生成简单for循环<br>for (int i = 0; i &lt; ; i++) {<br>}</p>
+</li>
+<li><p>itli : 生成list的for循环<br>for (int i = 0; i &lt; list.size(); i++) {<br> String s = list.get(i);<br>}</p>
+</li>
+<li><p>itar : 生成array的for循环<br>int[] array = {1,2,3,4,5};<br>for (int i = 0; i &lt; array.length; i++) {<br> int i1 = array[i];<br>}</p>
+</li>
+<li><p>iter : 根据最近数组/集合生成增强for循环<br>for (String s : list) {<br>}</p>
+</li>
+<li><p>list.for : 生成指定数组增强for循环<br>for (String s : list) {<br>}</p>
+</li>
+<li><p>I : 生成空白格式增强for循环<br>for (Object ob : ) {<br>}</p>
+</li>
+<li><p>iten : 生成 enumeration遍历<br>while (enumeration.hasMoreElements()) {<br> Object nextElement = enumeration.nextElement();<br>}</p>
+</li>
+<li><p>itit : 生成迭代器 iterator<br>while (iterator.hasNext()) {<br> Object next = iterator.next();<br>}</p>
+</li>
+<li><p>itco : 生成Collection迭代器<br>for (Iterator iterator = list.iterator(); iterator.hasNext(); ) {<br> String next = iterator.next();<br>}</p>
+</li>
+<li><p>“xxx”.try : 生成try…catch<br>try {<br>  “xxx”<br>} catch (Exception e) {<br> e.printStackTrace();<br>}</p>
+</li>
+<li><p>xxxList.for + tab : 快速生成对象for循环<br>List&lt;Demo&amp; demoList = Lists.newArrayList();<br>//demoList.for + tab<br>for (Demo demo : demoList) {<br>}</p>
+</li>
+<li><p>entity.getXxx().var + tab : 快速回去对象属性值并赋值给变量<br>List&lt;Demo&amp; demoList = Lists.newArrayList();<br>Demo demo = new Demo();<br>//demo.getName().val + tab<br>String name = demo.getName();</p>
+<h1 id="String-类型"><a href="#String-类型" class="headerlink" title="String 类型"></a>String 类型</h1><h2 id="“test”-sout-输出"><a href="#“test”-sout-输出" class="headerlink" title="“test”.sout //输出"></a>“test”.sout //输出</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">   System.out.println(&quot;test&quot;);</span><br><span class="line">1</span><br></pre></td></tr></table></figure>
+
+<h2 id="“test”-cast-转换"><a href="#“test”-cast-转换" class="headerlink" title="“test”.cast //转换"></a>“test”.cast //转换</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">((光标位置) &quot;test&quot;)</span><br><span class="line">1</span><br></pre></td></tr></table></figure>
+
+<h2 id="“test”-format-字符串格式化"><a href="#“test”-format-字符串格式化" class="headerlink" title="“test”.format //字符串格式化"></a>“test”.format //字符串格式化</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">String.format(&quot;test&quot;, 光标位置)</span><br><span class="line">1</span><br></pre></td></tr></table></figure>
+
+<h2 id="“test”-inst-或者-“test”-instanceof"><a href="#“test”-inst-或者-“test”-instanceof" class="headerlink" title="“test”.inst 或者 “test”.instanceof"></a>“test”.inst 或者 “test”.instanceof</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&quot;test&quot; instanceof  ? ((光标位置) &quot;test&quot;) : null;</span><br><span class="line">   1</span><br></pre></td></tr></table></figure>
+
+<h2 id="“test”-nn-或者-“test”-notnull"><a href="#“test”-nn-或者-“test”-notnull" class="headerlink" title="“test”.nn 或者 “test”.notnull"></a>“test”.nn 或者 “test”.notnull</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">if (&quot;test&quot; !&#x3D; null) &#123;</span><br><span class="line">       </span><br><span class="line">&#125;</span><br><span class="line">   123</span><br></pre></td></tr></table></figure>
+
+<h2 id="“test”-null"><a href="#“test”-null" class="headerlink" title="“test”.null"></a>“test”.null</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">   if (&quot;test&quot; &#x3D;&#x3D; null) &#123;</span><br><span class="line">       </span><br><span class="line">   &#125;</span><br><span class="line">123</span><br></pre></td></tr></table></figure>
+
+<h2 id="“test”-par"><a href="#“test”-par" class="headerlink" title="“test”.par"></a>“test”.par</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">(&quot;test&quot;)</span><br><span class="line">1</span><br></pre></td></tr></table></figure>
+
+<h2 id="“test”-return"><a href="#“test”-return" class="headerlink" title="“test”.return"></a>“test”.return</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">return &quot;test&quot;;</span><br><span class="line">1</span><br></pre></td></tr></table></figure>
+
+<h2 id="“test”-synchronized"><a href="#“test”-synchronized" class="headerlink" title="“test”.synchronized"></a>“test”.synchronized</h2></li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">   synchronized (&quot;test&quot;) &#123;</span><br><span class="line">    </span><br><span class="line">   &#125;</span><br><span class="line">123</span><br></pre></td></tr></table></figure>
+
+<h2 id="“test”-try"><a href="#“test”-try" class="headerlink" title="“test”.try"></a>“test”.try</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">try &#123;</span><br><span class="line"> &quot;test&quot;</span><br><span class="line">&#125; catch (Exception e) &#123;</span><br><span class="line">    e.printStackTrace();</span><br><span class="line">&#125;</span><br><span class="line">12345</span><br></pre></td></tr></table></figure>
+
+<h2 id="“test”-var"><a href="#“test”-var" class="headerlink" title="“test”.var"></a>“test”.var</h2>   <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">String test &#x3D; &quot;test&quot;;</span><br><span class="line">1</span><br></pre></td></tr></table></figure>
+
+<h1 id="boolean类型"><a href="#boolean类型" class="headerlink" title="boolean类型"></a>boolean类型</h1>   <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">true.  自动联想N多快捷方法</span><br><span class="line">1</span><br></pre></td></tr></table></figure>
+
+<h1 id="数值类型"><a href="#数值类型" class="headerlink" title="数值类型"></a>数值类型</h1>   <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">int a &#x3D; 2;</span><br><span class="line">a. 自动联想N多快捷方法，包括循环</span><br></pre></td></tr></table></figure>
+
+<ol start="5">
+<li></li>
+</ol>
+<ol start="6">
+<li></li>
+</ol>
+<p>面向对象：</p>
 <p>对于类的创建和使用，无外乎就是操作类的变量，调用类的方法，通过对象.属性，对象.方法执行</p>
 <p>对于public和private的理解：</p>
 <blockquote>
@@ -108,9 +246,9 @@ if (autoChangeMode === '1') {
 <p>方法的重载，同一个类中，允许存在一个以上的同名方法，只要参数个数或者参数类型不同或者参数类型的顺序不同即可，参数名字不同不构成重载。</p>
 <p>Java中特有的…的方式来说传递可变个数的参数，这种参数在使用时与数组的使用方式相同，但数组没有参数的话，就需要定义一个空数组或者是null</p>
 <p>这种…代表可以传递0到多个参数</p>
-<p>对于NullPointerException空指针的理解：1.类没有初始化，例如定义了个String，List，Map 等对象没有初始化就直接使用，肯定会出空指针错误，正确初始化如下： String str=&quot;&quot;; List list = new ArrayList(); Map map = new HashMap(); 2.在使用框架，例如Spring的时候成员对象是通过注入进来的，需要注意一下两点： 1）成员变量必须有get set 方法 2）必须在配置文件中把实例化好的对象注入进来 3.对上面的描述的一个补充，判断字符串是否为空在java中比较好的写法是 if(rb!=null&amp;&amp;!&quot;&quot;.equals(rb.trim())) ………….; 这种判断风格还是比较不错的（摘自CSDN中的一名学者）</p>
+<p>对于NullPointerException空指针的理解：1.类没有初始化，例如定义了个String，List，Map 等对象没有初始化就直接使用，肯定会出空指针错误，正确初始化如下： String str=&quot;&quot;; List list = new Array List(); Map map = new HashMap(); 2.在使用框架，例如Spring的时候成员对象是通过注入进来的，需要注意一下两点： 1）成员变量必须有get set 方法 2）必须在配置文件中把实例化好的对象注入进来 3.对上面的描述的一个补充，判断字符串是否为空在java中比较好的写法是 if(rb!=null&amp;&amp;!&quot;&quot;.equals(rb.trim())) ………….; 这种判断风格还是比较不错的（摘自CSDN中的一名学者）</p>
 <p>基本数据类在参数的传递过程中，就是把实参的值复制到形参上，引用数据在参数传递的过程中，都是指向在堆内存中的同一个对象，是可以改变堆内存中的值。</p>
-<p>封装的隐藏，主要是对属性做封装和隐藏，不能让调用者随意使用，先将数据声明为私有，在提供公共的方法来实现对该属性的操作，一般写getXxx(),setXxx(),方法。</p>
+<p>封装的隐藏，主要是对属性做封装和隐藏，不能让调用者随意使用，先将数据声明为私有，在提供公共的方法来实现对该属性的操作，一般写<code>[getXxx(),setXxx()]()</code>,方法。</p>
 <p>访问权限修饰符：private，缺省，protected , public,对于class的修饰，只能用缺省或者public，在同一个Java文件中可以写多个的class，但是只有一个public，其他的class只能是缺省，而缺省的只能在同一个包下访问。总结：如果子类和父类在同一个包下，那么对于父类的成员修饰符只要不是private，那子类就可以使用；如果子类和父类不在同一个包下，子类只能使用父类中protected和public修饰的成员</p>
 <p>类的构造方法，构造器有两类：隐式无参构造和显式有参（无惨）构造，new对象实际上就是调用类的构造方法。构造器的重载,重载的多个构造方法实际上就是相当于提供了多个初始化new对象的模板</p>
 <p>对于this的使用，使用当前类的成员变量或成员方法可以再其前面添加this，增强程序的阅读性，this.成员变量。当形参与成员变量重名时，如果在方法内部需要使用成员变量，必须添加this来表明该变量时类成员。使用this()必须放在构造器的首行；使用this调用本类中其他的构造器，保证至少有一个构造器是不用this的，否则会出现递归构造器自己调用自己的情况，就会报错。</p>
@@ -121,7 +259,7 @@ if (autoChangeMode === '1') {
 <ol>
 <li>访问属性：this是访问本类以及父类中的属性，而super只访问父类中的属性</li>
 <li>调用方法：this调用本类中的方法；super直接访问父级中的方法（多层继承）</li>
-<li>调用构造器：this调用本类构造器，必须放在构造器的首行；superthis调用父类构造器，必须放在子类构造器的首行，两个关键字只能有一个占据首行。</li>
+<li>调用构造器：this调用本类构造器，必须放在构造器的首行；super调用父类构造器，必须放在子类构造器的首行，两个关键字只能有一个占据首行。</li>
 <li>特殊：表示的是当前对象</li>
 </ol>
 <p>多态性：Java的一个重要特性</p>
@@ -142,7 +280,7 @@ if (autoChangeMode === '1') {
 </li>
 </ul>
 </li>
-<li><p>instanceof操作符：检验某个对象是否类A的子类。</p>
+<li><p><code>instanceof</code> 操作符：检验某个对象是否类A的子类。</p>
 </li>
 <li><p>Object类：是所有Java的父类，就是多层继承的最高类。Object 设置的形参可以接受任何类作为其参数，作为实例。</p>
 </li>
@@ -162,15 +300,265 @@ if (autoChangeMode === '1') {
 </li>
 <li><p>操作符与equals方法：</p>
 <ul>
-<li><p>对于 == 使用比较时，符号两边的数据类型必须兼容（要么相同数据类型，要么可以自动转换的数据类型），否则编译出错</p>
+<li><p>对于 == 使用比较时，比较的是两边存储数据的地址是否相同，符号两边的数据类型必须兼容（要么相同数据类型，要么可以自动转换的数据类型），否则编译出错</p>
 </li>
 <li><p>equals():其作用与 == 符号相同；有个特殊情况：对于File , String , Date以及包装类（Wrapper  Class）来说，是比较其内容和类型。不考虑是否引用的同一个对象，原因很简单，在jdk中这些类重写了Object类中的equals()方法。</p>
 </li>
 </ul>
 </li>
-<li></li>
+<li><p>包装类：将java中八个基本数据类型封装：</p>
+<ul>
+<li><p>boolean —&gt; Boolean</p>
+</li>
+<li><p>char —&gt; Character</p>
+</li>
+<li><p>byte—&gt; Byte</p>
+</li>
+<li><p>short—&gt; Short</p>
+</li>
+</ul>
+</li>
 </ol>
-</div><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined">德柒</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="http://shudeqi.github.io/year/10/20/Java/">http://shudeqi.github.io/year/10/20/Java/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://shudeqi.github.io" target="_blank">書德柒のBLOG</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E7%A8%8B%E5%BA%8F%E5%91%98/">程序员</a></div><div class="post_share"><div class="social-share" data-image="https://s1.ax1x.com/2020/08/06/aRijDx.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i> 打赏<div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="/img/wechat.jpg" target="_blank"><img class="post-qr-code-img" data-lazy-src="/img/wechat.jpg" alt="wechat"/></a><div class="post-qr-code-desc">wechat</div></li><li class="reward-item"><a href="/img/alipay.jpg" target="_blank"><img class="post-qr-code-img" data-lazy-src="/img/alipay.jpg" alt="alipay"/></a><div class="post-qr-code-desc">alipay</div></li></ul></div></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/year/11/03/JavaEE%E7%AE%80%E4%BB%8B/"><img class="prev-cover" data-lazy-src="https://s1.ax1x.com/2020/08/05/asZxgI.jpg" onerror="onerror=null;src='/img/404.jpg'"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info"></div></div></a></div><div class="next-post pull-right"><a href="/year/09/01/%E7%A1%85%E8%B0%B7%E5%8D%81%E6%AD%A5%E5%AD%A6%E4%B9%A0%E6%B3%95/"><img class="next-cover" data-lazy-src="https://s1.ax1x.com/2020/08/06/aRijDx.png" onerror="onerror=null;src='/img/404.jpg'"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">硅谷十步学习法</div></div></a></div></nav><div class="relatedPosts"><div class="relatedPosts_headline"><i class="fas fa-thumbs-up fa-fw"></i><span> 相关推荐</span></div><div class="relatedPosts_list"><div class="relatedPosts_item"><a href="/year/09/01/硅谷十步学习法/" title="硅谷十步学习法"><img class="relatedPosts_cover" data-lazy-src="https://s1.ax1x.com/2020/08/06/aRijDx.png"><div class="relatedPosts_main is-center"><div class="relatedPosts_date"><i class="far fa-calendar-alt fa-fw"></i> 2020-09-01</div><div class="relatedPosts_title">硅谷十步学习法</div></div></a></div></div></div></article></main><footer id="footer" style="background-image: url(https://s1.ax1x.com/2020/08/06/aRijDx.png)" data-type="photo"><div id="footer-wrap"><div class="copyright">&copy;2020 By 德柒</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">有朋自遠方來，不亦樂乎！</div></div></footer></div><section id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="font_plus" type="button" title="放大字体"><i class="fas fa-plus"></i></button><button id="font_minus" type="button" title="缩小字体"><i class="fas fa-minus"></i></button><button id="translateLink" type="button" title="简繁转换">简</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></section><div class="search-dialog" id="local-search"><div class="search-dialog__title" id="local-search-title">本地搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div></div><hr/><div id="local-search-results"><div id="local-hits"></div><div id="local-stats"><div class="local-search-stats__hr" id="hr"><span>由</span> <a target="_blank" rel="noopener" href="https://github.com/wzpan/hexo-generator-search" style="color:#49B1F5;">hexo-generator-search</a>
+<ul>
+<li><p>long—&gt; Long</p>
+<ul>
+<li><p>int —&gt; Integer</p>
+</li>
+<li><p>float—&gt; Float</p>
+</li>
+<li><p>double—&gt; Double</p>
+<p>包装被转换：可以进行自动拆箱和自动装箱的</p>
+<p>主要作用：基本数据类型与字符串的直接转化</p>
+</li>
+</ul>
+</li>
+</ul>
+<ol start="11">
+<li><p>toString():是父类Object的方法，输出的是当前对象的内存地址，如果你想要输出类的其他信息，重写toString方法。打印m对象相当于执行打印m.toString()。</p>
+</li>
+<li><p>关键词:static</p>
+<ol>
+<li>静态变量：不因对象不同而改变，就可以设置为类属性，不用实例化就能够使用的变量类型，类名属性名就可以使用。</li>
+</ol>
+</li>
+<li><p>方法和变量都可以用static修饰，和类属性一样，如果方法不想因对象的不同而频繁通过new对象的方式去调用方法，则这样的方法通常被声明为类方法，简化了方法的调用。工具类的方法可能会常用到建立类方法。</p>
+<ol start="3">
+<li><p>特点：</p>
+<ul>
+<li><p>随着类的加载而加载</p>
+</li>
+<li><p>优先于对象存在</p>
+</li>
+<li><p>修饰的成员，被所有对象所共享</p>
+</li>
+<li><p>访问权限允许时（static一般只修饰public的方法），可不创建对象，直接被类调用</p>
+</li>
+</ul>
+</li>
+</ol>
+</li>
+<li><p>注意：</p>
+<pre><code>- 对于类变量的使用，要慎重，因为这种可以被多有的实例化对象共享的属性，只要一改，就会引起所有类的变化。
+- 不能使用this和super，因为static是可以不用实例就能够访问的</code></pre>
+</li>
+<li><p>单例设计模式：</p>
+<p>特点：</p>
+<ol>
+<li><p>单例类只能有一个实例。　　</p>
+</li>
+<li><p>单例类必须自己创建自己的唯一实例。</p>
+</li>
+<li><p>单例类必须给所有其他对象提供这一实例。</p>
+<p>种类：懒汉式单例和饿汉式单例</p>
+</li>
+</ol>
+<ul>
+<li>饿汉式（就像是吃快餐一样，进来就可以直接吃，直接使用已经创建好的对象）：构造方法的私有化，创建好一个静态的对象供对象或者方法系统使用。</li>
+<li>懒汉式（就像是在宿舍生活的我们，一到周末，就呆在宿舍喝泡面，只要第一周开始喝泡面，以后的每周都会和泡面）：最开始是没有对象的，直到有人调用的时候，才new一个对象，之后所有调用该对象的都用这一个对象，存在线程安全问题。</li>
+<li>共同点：也就是单例模式的特点，在软件运行时，有且仅有一个实例化对象，参考建立过程：先私有一个化一个构造方法，再私有一个类变量，在创建一个可以被调用的static类方法getInstance()，调用的时候直接调用static类方法就行了</li>
+<li>两者区别就在于：对象的创建时间不同</li>
+</ul>
+</li>
+<li><p>代码块</p>
+<ol>
+<li><p>作用：对Java对象进行初始化</p>
+</li>
+<li><p>程序的执行顺序：</p>
+<ul>
+<li><p>成员变量的声明</p>
+</li>
+<li><p>显示初始化和属性初始化</p>
+</li>
+<li><p>执行代码块代码（多个代码块，按照程序的编写顺序执行）</p>
+</li>
+<li><p>执行构造器代码</p>
+</li>
+</ul>
+</li>
+<li><p>静态代码块需要使用static修饰的属性和方法，而非静态代码块不用，静态代码块只执行一次，且先于静态代码块，而非静态代码块每次new对象的时候都需要重新执行。</p>
+</li>
+<li><p>在实际开发中,static静态代码块用在初始化类的静态属性(static类型属性)。在匿名内部类中，可用代码块代替构造方法</p>
+</li>
+</ol>
+</li>
+<li><p>关键字：final，修饰声明类，属性和方法</p>
+<ol>
+<li>修饰类，表明最终的类，不能被继承，提高安全性，提高程序的可读性</li>
+<li>修饰方法，表明最终的方法，不能被子类重写、</li>
+<li>修饰变量称为常量，名称大写（约定成俗的：全大写，代表常量），且只能被赋值一次。</li>
+<li>final static一起修饰变量，就是全局常量</li>
+</ol>
+</li>
+<li><p>抽象类（abstract  class）：</p>
+<ol>
+<li>用法：用abstract关键字来修饰，既可以修饰方法，又可以修饰类，相应的叫做抽象方法，抽象类。</li>
+<li>含有抽象方法的类必须声明为抽象类。</li>
+<li>抽象类不能被实例化，是用来作为父类被继承，其子类必须重写父类的方法，其子类仍为抽象类。</li>
+<li>不能用abstract修饰属性，私有方法，构造器，静态方法，final的方法</li>
+<li>应用：模型化那些父类是无法确定全部实现的，由其子类提供具体实现的对象的类</li>
+</ol>
+</li>
+<li><p>模板方法设计模式：抽象类体现的就是一种模板模式的设计，抽象类作为多个子类的通用模板，子类在抽象类的基础上进行扩展，改造，但子类总体上会保留抽象类的行为方式。</p>
+</li>
+<li><p>关键字：interface（接口）</p>
+<ol>
+<li><p>接口是抽象方法和常量值的定义的集合</p>
+</li>
+<li><p>接口是为了实现多重继承的效果</p>
+</li>
+<li><p>接口是种特殊的抽象类，这种抽象类中只包含常量的方法的定义，而没有变量和方法的实现</p>
+</li>
+<li><p>接口的出现：需要的稳定的抽象父类，如果父类需要修改的话，子类也会跟着受到影响（解决方法：要么实现父类修改的方法，要么将子类一样改成抽象类），但有时我们需要给父类增加方法，就不能直接从父类的方法上修改，只能新建一个接口，在接口上扩展方法，让子类自行去实现接口中的方法。</p>
+</li>
+<li><p>接口类的实现：</p>
+<ul>
+<li>class SubClass implements Interface{}</li>
+<li>一个类可以实现多个接口，接口也可以继承其他接口</li>
+</ul>
+</li>
+<li><p>接口的特点：</p>
+<ul>
+<li>用interface来定义</li>
+<li>接口中的所有成员变量的都是默认由public static final修饰的，也就是全局变量</li>
+<li>接口中的所有方法都是默认由public abstract修饰的</li>
+<li>接口没有构造器</li>
+<li>接口采用多层继承机制 </li>
+<li>实现接口的类中必须提供接口中所有方法的具体实现内容，方可实例化。否则，仍为抽象类。</li>
+<li>接口的主要用途就是被实现类实现。（面向接口编程）</li>
+<li>与继承关系类似，接口与实现类之间存在多态性</li>
+<li>定义Java类的语法格式：先写extends，后写implements</li>
+<li>​    &lt; modifier&gt; class &lt; name&gt; [extends &lt; superclass&gt;]<br>​    [implements &lt; interface&gt; [,&lt; interface&gt;]* ] {<br>​        &lt; declarations&gt;*<br>​    }</li>
+<li>总结：<ul>
+<li>抽象类是对于一类事物的高度抽象，其中既有属性也有方法接口是对方法的抽象，也就对一系列动作的抽象</li>
+<li>当需要对一类事物抽象的时候,应该是使用抽象类,好形成一个父类</li>
+<li>当需要对—系列的动作抽象，就使用接口，需要使用这些动作的类去实现相应的接口即可</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>练习题：<img src="D:\blog\myblog\source\post-img\image-20201123143826041.png" alt="image-20201123143826041" style="zoom: 50%;" /><img src="D:\blog\myblog\source\post-img\image-20201123143851537.png" alt="image-20201123143851537" style="zoom:50%;" /><img src="D:\blog\myblog\source\post-img\image-20201123143945587.png" alt="image-20201123143945587" style="zoom:50%;" /></p>
+</li>
+<li><p>设计模式：工厂方法（Factory Method）:通过工厂把new对象给隔离开，通过产品的接口可以接受不同世纪产品的实现类，实例的类名的改变不影响其他合作开发人员的编程。（为创建对象提供过渡接口，以便将创建对象的具体过程屏蔽隔离起来，达到提高灵活性的目的。 ）</p>
+</li>
+<li><p>类的成员：内部类用法：</p>
+<ol>
+<li><p>可以声明为final的</p>
+</li>
+<li><p>和外部类不同，Inner class可声明为private或protected；</p>
+</li>
+<li><p>Inner class 可以声明为static的，但此时就不能再使用外层类的非static的成员变量；</p>
+</li>
+<li><p>Inner class作为类：</p>
+<p>可以声明为abstract类 ，因此可以被其它的内部类继承</p>
+</li>
+<li><p>注意：非static的内部类中的成员不能声明为static的，只有在外部类或static的内部类中才可声明static成员。</p>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+<pre><code>内部类的作用：解决java中的不能多重继承的问题
+
+10. 面向对象总结：    &lt;img src=&quot;D:\blog\myblog\source\post-img\image-20201123160632596.png&quot; alt=&quot;image-20201123160632596&quot; style=&quot;zoom:150%;&quot; /&gt;
+
+11. java异常
+
+    - ```java
+      java.lang.ArrayIndexOutOfBoundsException数组越界
+      java.lang.NullPointerException空指针异常
+      java.lang.ArithmeticException算术异常
+      &lt;!--hexoPostRenderEscape:&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        - &amp;lt;img src&amp;#x3D;&amp;quot;D:\blog\myblog\source\post-img\image-20201124084652443.png&amp;quot; alt&amp;#x3D;&amp;quot;image-20201124084652443&amp;quot; style&amp;#x3D;&amp;quot;zoom: 50%;&amp;quot; &amp;#x2F;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        - 异常处理机制：&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;          - Java提供的是异常处理的抓抛模型（也就是try...catch..）。&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;          - 如果一个异常回到main()方法，并且main()也不处理，则程序运行终止。&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;          - 程序员通常只能处理Exception，而对Error无能为力。&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;          - try catch是为了防止程序可能出现的异常&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            在捕获异常的代码块中（try&amp;#123;&amp;#125;里的代码），如果前面的代码有异常了，就不会执行后面的&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;          - 一般只写一个try catch结构&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;          &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;          - catch（）中，如果明确知道产生的是何种异常，可以用该异常类作为catch的参数；也可以用其父类Exception作为catch的参数。&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;          &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        - 捕获异常：&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;          &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;          - 与其它对象一样，可以访问一个异常对象的成员变量或调用它的方法。&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            - getMessage( ) 方法，用来得到有关异常事件的信息&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            - printStackTrace( )用来跟踪异常事件发生时执行堆栈的内容。&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;          &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;          -  finally：不论在try、catch代码块中是否发生了异常事件，finally块中的语句都会被执行。&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;          - finally语句是可选的&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;          &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        - 抛出异常：&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;          - ​    public void readFile(String file)  throws FileNotFoundException &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            ​        ……&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            ​        &amp;#x2F;&amp;#x2F; 读文件的操作可能产生FileNotFoundException类型的异常&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            ​        FileInputStream fis &amp;#x3D; new FileInputStream(file);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            ​         ..……&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            ​     &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;          &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;          - 重写方法不能抛出比被重写方法范围更大的异常类型&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;          &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;          - Java异常类对象除在程序执行过程中出现异常时由系统自动生成并抛出，也可根据需要人工创建并抛出&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;          &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;          - java提供的异常的类一般是够用的，只有特殊的情况可能需要自己编写异常类，这种情况很少见&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;          &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;21. Java集合&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    1. HashSet()：就像是jdk自带的类，写好的算法一样，调用的是系统设定好的属性和方法来实现自己想要的功能&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;       - 特点：&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;         1. 不能保证元素的排列顺序&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;         2. 不可重复&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;         3. HashSet 不是线程安全的&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;         4. 集合元素可以使 null&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        - 使用Iterator循环遍历集合元素：&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;:hexoPostRenderEscape--&gt;
+      Iterator it = set.iterator();
+
+      while(it.hasNext())&#123;
+         System.out.println(it.next());
+      &#125;
+      &lt;!--hexoPostRenderEscape:&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;- foreach循环遍历集合元素（主要使用）：&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;:hexoPostRenderEscape--&gt;
+      for(Object obj : set)&#123;//这个的意思是把set的每一个值取出来，赋值给obj，直到循环set的所有值
+         System.out.println(obj);
+      &#125;
+      &lt;!--hexoPostRenderEscape:&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;- 泛型：让集合只能存同样类型的对象&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;:hexoPostRenderEscape--&gt;
+    Set&lt;String&gt; set1 = new HashSet&lt;String&gt;();//比如指定String为集合的泛型，那么这个集合不能存String类型之外的数据
+    &lt;!--hexoPostRenderEscape:&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;22. TreeSet()&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    1. 特点：自然排序，和HashSet的遍历方法一样&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    2. 使用：必须放入同样类的对象.(默认会进行排序) 否则可能会发生类型转换异常.我们可以使用泛型来进行限制，&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    3. 定制排序：如果需要实现定制排序，则需要在创建 TreeSet 集合对象时，提供一个 Comparator 接口的实现类对象。然后再重compare方法：&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;23. List集合&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    1. 特点：&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      - List 代表一个元素有序、且可重复的集合，集合中的每个元素都有其对应的顺序索引&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      - List 允许使用重复元素，可以通过索引来访问指定位置的集合元素。&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      - List 默认按元素的添加顺序设置元素的索引。&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      - List 集合里添加了一些根据索引来操作集合元素的方法&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    2. 使用：&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      &amp;#96;List&amp;lt;String&amp;gt; l &amp;#x3D; new ArrayList&amp;lt;String&amp;gt;();&amp;#96;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      &amp;#96;System.out.println(list.get(2));&amp;#x2F;&amp;#x2F;通过索引来访问指定位置的集合元素&amp;#96;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      &amp;#96;list.add(1,&amp;quot;f&amp;quot;);&amp;#x2F;&amp;#x2F;在指定索引下标的位置插入数据&amp;#96;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      &amp;#96;list.addAll(2, list);&amp;#x2F;&amp;#x2F;在指定索引下标的位置插入集合&amp;#96;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      &amp;#96;System.out.println(list.indexOf(&amp;quot;d&amp;quot;));&amp;#x2F;&amp;#x2F;获取指定元素在集合中第一次出现的索引下标&amp;#96;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      &amp;#96;System.out.println(list.lastIndexOf(&amp;quot;d&amp;quot;));&amp;#x2F;&amp;#x2F;获取指定元素在集合中最后一次出现的索引下标&amp;#96;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      &amp;#96;list.remove(2);&amp;#x2F;&amp;#x2F;根据指定的索引下标移除元素&amp;#96;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      &amp;#96;list.set(1, &amp;quot;ff&amp;quot;);&amp;#x2F;&amp;#x2F;根据指定的索引下标修改元素&amp;#96;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      &amp;#96;List&amp;lt;String&amp;gt; sublist &amp;#x3D;  list.subList(2, 4);&amp;#x2F;&amp;#x2F;取索引下标在大于等于2小于4的元素&amp;#96;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      ArrayList 和 Vector 是 List 接口的两个典型实现,但一般不使用Vector&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;24. Map集合：Map 用于保存具有映射关系的数据，因此 Map 集合里保存着两组值，一组值用于保存 Map 里的 Key，另外一组用于保存 Map 里的 Value&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      1. 使用方法：&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;         &amp;lt;img src&amp;#x3D;&amp;quot;D:\blog\myblog\source\post-img\image-20201127200240743.png&amp;quot; alt&amp;#x3D;&amp;quot;image-20201127200240743&amp;quot; style&amp;#x3D;&amp;quot;zoom: 80%;&amp;quot; &amp;#x2F;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;         实例：    &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;:hexoPostRenderEscape--&gt;
+     map.put(&quot;b&quot;, 1);//添加数据
+     System.out.println(map.get(&quot;b&quot;));//根据key取值
+     map.remove(&quot;c&quot;);//根据key移除键值对
+     System.out.println(map.size());//map集合的长度
+     System.out.println(map.containsKey(&quot;a&quot;));//判断当前的map集合是否包含指定的key
+     System.out.println(map.containsValue(10));//判断当前的map集合是否包含指定的value
+     map.clear();//清空集合
+     Set&lt;String&gt; keys = map.keySet();//获取map集合的key的集合
+     map.values();//获取集合的所有value值
+     //遍历map集合,通过map.keySet();
+     for(String key : keys)&#123;
+                 System.out.println(&quot;key: &quot; + key + &quot;, value: &quot; + map.get(key));
+             &#125;
+     //通过map.entrySet();遍历map集合
+             Set&lt;Entry&lt;String, Integer&gt;&gt; entrys = map.entrySet();
+             for(Entry&lt;String, Integer&gt; en : entrys)&#123;
+                 System.out.println(&quot;key: &quot; + en.getKey() + &quot;, value: &quot; + en.getValue());
+             &#125;
+     &lt;!--hexoPostRenderEscape:&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;     Treemap的自然排序是字典排序；&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;25. Collection&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    1. 使用方法：&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;       ![image-20201127202926210](D:\blog\myblog\source\post-img\image-20201127202926210.png)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    2. 实例：&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;:hexoPostRenderEscape--&gt;
+       Collections.reverse(list);//反转 List 中元素的顺序
+       Collections.shuffle(list);//对 List 集合元素进行随机排序
+       Collections.sort(list);//list集合字典升序排序
+       System.out.println(Collections.frequency(list, &quot;x&quot;));//返回指定集合中指定元素的出现次数
+       Collections.replaceAll(list, &quot;b&quot;, &quot;bb&quot;);//使用新值替换 List 对象的所有旧值
+       Collections.swap(list, 0, 4);//将指定 list 集合中的 i 处元素和 j 处元素进行交换
+       Collections.sort(stus, new Student());//根据指定的 Comparator 产生的顺序对 List 集合元素进行排序
+       &lt;!--hexoPostRenderEscape:&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3. Comparator类中的compare方法的重写：&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;:hexoPostRenderEscape--&gt;
+   @Override
+   public int compare(Student o1, Student o2) &#123;//根据年龄升序排列对象
+      if(o1.age &gt; o2.age)&#123;
+         return 1;
+      &#125;else if(o1.age &lt; o2.age)&#123;
+         return -1;
+      &#125;else&#123;
+         return 0;
+      &#125;
+   &#125;
+   &lt;!--hexoPostRenderEscape:&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;25. 泛型：为了解决数据类型安全问题&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    1. 用法：一般在编译期能够发现问题的类，当然，只会在编译阶段有效，泛型信息不会进入到运行时阶段。&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;:hexoPostRenderEscape--&gt;
+   A&lt;String&gt; a1 = new A&lt;String&gt;();//在new A的对象指定泛型的类型String
+   a1.serKey(&quot;xxxx&quot;);//对象使用serKey(T key)方法，中的key形参就是String
+   String s = a1.getKey();//T getKey()，返回值就有new对象确定返回值是String
+   A a3 = new A();//不指定泛型，相当于指定了一个Object类型
+       //同样的类，但是在new对象时泛型指定不同的数据类型，这些对象不能互相赋值
+   &lt;!--hexoPostRenderEscape:&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2. 泛型的接口：&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;:hexoPostRenderEscape--&gt;
+    如果实现接口时指定接口的泛型的具体数据类型
+    这个类实现接口所有方法的位置都要泛型替换实际的具体数据类型
+    未传入泛型实参时，与泛型类的定义相同，在声明类的时候，需将泛型的声明也一起加到类中
+   &lt;!--hexoPostRenderEscape:&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3. 泛型方法：&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;:hexoPostRenderEscape--&gt;
+   Cc&lt;Object&gt; c = new Cc&lt;Object&gt;();
+   c.test(&quot;xxx&quot;);
+   //泛型方法，在调用之前没有固定的数据类型
+   //在调用时，传入的参数是什么类型，就会把泛型改成什么类型
+   //也就是说，泛型方法会在调用时确定泛型距离数据类型
+   Integer i = c.test1(2);//传递的参数是Integer，泛型就固定成Integer，返回值就是Integer
+   Boolean b = c.test1(true);//传递的参数是Boolean，泛型就固定成Boolean，返回值就是Boolean
+   ```</code></pre>
+<p>​            4. 泛型通配符：</p>
+</div><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined">德柒</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="http://shudeqi.github.io/year/10/20/Java/">http://shudeqi.github.io/year/10/20/Java/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://shudeqi.github.io" target="_blank">書德柒のBLOG</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E7%A8%8B%E5%BA%8F%E5%91%98/">程序员</a></div><div class="post_share"><div class="social-share" data-image="https://s1.ax1x.com/2020/08/06/aRijDx.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i> 打赏<div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="/img/wechat.jpg" target="_blank"><img class="post-qr-code-img" data-lazy-src="/img/wechat.jpg" alt="wechat"/></a><div class="post-qr-code-desc">wechat</div></li><li class="reward-item"><a href="/img/alipay.jpg" target="_blank"><img class="post-qr-code-img" data-lazy-src="/img/alipay.jpg" alt="alipay"/></a><div class="post-qr-code-desc">alipay</div></li></ul></div></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/year/11/03/JavaEE%E7%AE%80%E4%BB%8B/"><img class="prev-cover" data-lazy-src="https://s1.ax1x.com/2020/08/05/asFYvT.jpg" onerror="onerror=null;src='/img/404.jpg'"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info"></div></div></a></div><div class="next-post pull-right"><a href="/year/09/01/%E7%A1%85%E8%B0%B7%E5%8D%81%E6%AD%A5%E5%AD%A6%E4%B9%A0%E6%B3%95/"><img class="next-cover" data-lazy-src="https://s1.ax1x.com/2020/08/06/aRijDx.png" onerror="onerror=null;src='/img/404.jpg'"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">硅谷十步学习法</div></div></a></div></nav><div class="relatedPosts"><div class="relatedPosts_headline"><i class="fas fa-thumbs-up fa-fw"></i><span> 相关推荐</span></div><div class="relatedPosts_list"><div class="relatedPosts_item"><a href="/year/09/01/硅谷十步学习法/" title="硅谷十步学习法"><img class="relatedPosts_cover" data-lazy-src="https://s1.ax1x.com/2020/08/06/aRijDx.png"><div class="relatedPosts_main is-center"><div class="relatedPosts_date"><i class="far fa-calendar-alt fa-fw"></i> 2020-09-01</div><div class="relatedPosts_title">硅谷十步学习法</div></div></a></div></div></div></article></main><footer id="footer" style="background-image: url(https://s1.ax1x.com/2020/08/06/aRijDx.png)" data-type="photo"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2021 By 德柒</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">有朋自遠方來，不亦樂乎！</div></div></footer></div><section id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="font_plus" type="button" title="放大字体"><i class="fas fa-plus"></i></button><button id="font_minus" type="button" title="缩小字体"><i class="fas fa-minus"></i></button><button id="translateLink" type="button" title="简繁转换">简</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></section><div class="search-dialog" id="local-search"><div class="search-dialog__title" id="local-search-title">本地搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div></div><hr/><div id="local-search-results"><div id="local-hits"></div><div id="local-stats"><div class="local-search-stats__hr" id="hr"><span>由</span> <a target="_blank" rel="noopener" href="https://github.com/wzpan/hexo-generator-search" style="color:#49B1F5;">hexo-generator-search</a>
  <span>提供支持</span></div></div></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div id="search-mask"></div><div><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module" defer></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js" async></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script src="/js/search/local-search.js"></script><script>var endLoading = function () {
   document.body.style.overflow = 'auto';
   document.getElementById('loading-box').classList.add("loaded")
